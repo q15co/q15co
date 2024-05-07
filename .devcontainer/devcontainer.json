@@ -1,0 +1,27 @@
+{
+  "name": "Q15",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bullseye",
+  "features": {
+    "ghcr.io/devcontainers/features/git-lfs:1": {
+      "autoPull": true,
+      "version": "latest"
+    },
+    "ghcr.io/meaningful-ooo/devcontainer-features/fish:1": {
+      "fisher": true
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "astro-build.astro-vscode",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "figma.figma-vscode-extension",
+        "GitHub.vscode-pull-request-github",
+        "seatonjiang.gitmoji-vscode"
+      ]
+    }
+  },
+
+  "postCreateCommand": "pnpm install"
+}

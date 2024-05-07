@@ -1,0 +1,17 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.DS_Store
+.vercel
+.netlify
+*.log
+package-lock.json
+.turbo/
+.eslintcache
+.pnpm-store
+
+# do not commit .env files or any files that end with `.env`
+*.env
+
+# exclude IntelliJ/WebStorm stuff
+.idea

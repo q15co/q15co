@@ -1,0 +1,8 @@
+{
+  "name": "q15co",
+  "description": "Monorepo for the q15 collective",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {}
+}
