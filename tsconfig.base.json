@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "moduleResolution": "Bundler",
+    "target": "ES2023",
+    "module": "NodeNext",
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  }
+}
