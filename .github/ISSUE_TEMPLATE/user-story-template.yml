@@ -20,7 +20,8 @@ body:
       required: true
   - type: markdown
     attributes:
-      label: Sprint Ready
       value: |
+        ## ✅ Sprint Ready Checklist
+
         - [ ] The user story is understood by everyone.
         - [ ] The acceptance criteria are defined and measurable
