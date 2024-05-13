@@ -18,7 +18,9 @@
         "esbenp.prettier-vscode",
         "figma.figma-vscode-extension",
         "GitHub.vscode-pull-request-github",
-        "seatonjiang.gitmoji-vscode"
+        "seatonjiang.gitmoji-vscode",
+        "unifiedjs.vscode-mdx",
+        "naumovs.color-highlight"
       ]
     }
   },

@@ -8,19 +8,16 @@ const [q] = argSchema.parse(process.argv.slice(2));
 
 const env = envSchema.parse(process.env);
 
-const { organic } = await ofetch<SerpResult>(
-  "https://google.serper.dev/search",
-  {
-    method: "POST",
-    headers: {
-      "X-API-KEY": env.SERPER_KEY,
-      "Content-Type": "application/json",
-    },
-    body: {
-      q,
-    },
-  }
-);
+const { organic } = await ofetch<SerpResult>("https://google.serper.dev/search", {
+  method: "POST",
+  headers: {
+    "X-API-KEY": env.SERPER_KEY,
+    "Content-Type": "application/json",
+  },
+  body: {
+    q,
+  },
+});
 
 const pageSpeedInsights = google.pagespeedonline({
   version: "v5",
