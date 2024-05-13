@@ -15,16 +15,25 @@ export default defineConfig({
       social: {
         github: "https://github.com/q15co/q15co",
       },
+      defaultLocale: "root",
+      locales: {
+        root: {
+          label: "English",
+          lang: "en",
+        },
+        de: {
+          label: "Deutsch",
+        },
+      },
       sidebar: [
         {
-          label: "Guides",
-          items: [
-            // Each item here is one entry in the navigation menu.
-            {
-              label: "Example Guide",
-              link: "/guides/example/",
-            },
-          ],
+          label: "Courses",
+          translations: {
+            de: "Kurse",
+          },
+          autogenerate: {
+            directory: "courses",
+          },
         },
         {
           label: "Reference",
