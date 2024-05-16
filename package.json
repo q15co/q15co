@@ -4,5 +4,11 @@
   "type": "module",
   "version": "0.0.0",
   "private": true,
-  "scripts": {}
+  "scripts": {
+    "format": "prettier -w --cache --plugin prettier-plugin-astro ."
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "prettier-plugin-astro": "^0.13.0"
+  }
 }

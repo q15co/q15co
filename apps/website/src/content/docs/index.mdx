@@ -1,0 +1,49 @@
+---
+title: Debug your career
+description: Q15, your partner on your web development career path.
+template: splash
+hero:
+  tagline: |
+    At Q15, we take a unique approach to troubleshooting your career path, 
+    just like we would with code.
+  image:
+    file: ../../assets/girl_duck.webp
+  actions:
+    - text: Get Started
+      link: https://q15.co
+      icon: rocket
+      variant: primary
+---
+
+import { CardGrid, Card, LinkCard } from "@astrojs/starlight/components";
+import { CourseCard } from "../../components";
+import { result } from "../../data";
+
+## Our Courses
+
+<CardGrid stagger>
+{result.data.map(measure => <CourseCard
+    title={measure.title}
+    description={measure.description}
+    href={`/courses/${measure.id}`}
+  />
+)}
+
+</CardGrid>
+
+## Q15: Born from Real Experience
+
+Q15 was founded by Adriaan, a developer who has been through the tech recruitment grind: intense interviews, challenging trial tasks, and tough salary negotiations. It’s this firsthand experience that shaped my unique approach to coaching, focusing on genuine support without the influence of external pressures.
+
+### Certified Excellence
+
+![Certqua Seal](/src/assets/certqua_org_s.webp)
+
+Our commitment to quality education is backed by a positive audit from Certqua, affirming that "The provider maintains an excellent standard of educational services, meeting all prescribed quality criteria with commendable adherence to regulatory requirements." This recognition assures that we’re serious about offering the best possible learning experience.
+
+At Q15, we choose to stay small. This isn’t about expanding into a large corporation; it’s about maintaining a focus where every student gets the attention they deserve. No external investors, no profit-driven motives—just a dedicated team that’s all about empowering tech professionals.
+
+Your Career, Our Mission
+Think of us as your career ally, someone who’s in your corner, not just during the course but as you navigate the challenges of entering the tech industry. We’re here to offer guidance that’s aligned with your best interests, helping you to not only land a job but to excel in it.
+
+Join us at Q15, where education is personal, support is sincere, and your career goals become our goals.

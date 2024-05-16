@@ -1,0 +1,46 @@
+@import "@fontsource-variable/recursive/full.css";
+
+:root {
+  --sl-font: "Recursive Variable", sans-serif;
+  --sl-font-mono: "Recursive Variable", sans-serif;
+  /* Colors (dark mode) */
+  --sl-color-white: hsl(226, 64%, 88%);
+  --sl-color-gray-1: hsl(227, 35%, 80%);
+  --sl-color-gray-2: hsl(228, 24%, 72%);
+  --sl-color-gray-3: hsl(228, 17%, 64%);
+  --sl-color-gray-4: hsl(233, 12%, 39%);
+  --sl-color-gray-5: hsl(240, 21%, 15%);
+  --sl-color-gray-6: hsl(240, 21%, 12%);
+  --sl-color-black: hsl(240, 23%, 9%);
+
+  --sl-color-accent-low: hsl(217, 92%, 56%);
+  --sl-color-accent: hsl(217, 92%, 66%);
+  --sl-color-accent-high: hsl(217, 92%, 76%);
+
+  &[data-theme="light"] {
+    /* Colours (light mode) */
+    --sl-color-white: hsl(234, 16%, 35%);
+    --sl-color-gray-1: hsl(233, 13%, 41%);
+    --sl-color-gray-2: hsl(233, 10%, 47%);
+    --sl-color-gray-3: hsl(228, 11%, 65%);
+    --sl-color-gray-4: hsl(227, 12%, 71%);
+    --sl-color-gray-5: hsl(223, 16%, 83%);
+    --sl-color-gray-6: hsl(220, 23%, 95%);
+    --sl-color-gray-7: hsl(220, 22%, 92%);
+    --sl-color-black: hsl(220, 21%, 89%);
+
+    --sl-color-accent-low: hsl(220, 91%, 34%);
+    --sl-color-accent: hsl(220, 91%, 54%);
+    --sl-color-accent-high: hsl(220, 91%, 74%);
+  }
+}
+
+body {
+  font-variation-settings: "CRSV" 1;
+}
+
+code {
+  font-variation-settings:
+    "CRSV" 0,
+    "MONO" 1;
+}
