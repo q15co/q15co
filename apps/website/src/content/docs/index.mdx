@@ -17,21 +17,17 @@ hero:
 
 import { CardGrid, Card, LinkCard } from "@astrojs/starlight/components";
 import { CourseCard } from "../../components";
+import { result } from "../../data";
 
 ## Our Courses
 
 <CardGrid stagger>
-  <CourseCard
-    title="TypeScript with Open Source"
-    description="Launch your career in TypeScript via Open Source"
-    href="/courses/typescript-opensource"
+{result.data.map(measure => <CourseCard
+    title={measure.title}
+    description={measure.description}
+    href={`/courses/${measure.id}`}
   />
-  <CourseCard
-    title="Job Coaching"
-    description="Land your ideal position in Web Development with our career coaching program"
-    href="/courses/job-coaching"
-
-/>
+)}
 
 </CardGrid>
 
